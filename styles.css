@@ -562,15 +562,15 @@ header p {
 }
 
 /* ===============================
-   夢の宿 画像サイズ調整
+   夢の宿：画像サイズ調整
 ================================= */
 .about-image img {
-  max-width: 70%;   /* ← 70%〜80%がおすすめ */
+  max-width: 60%;   /* ← 70%〜80%がおすすめ */
   height: auto;
 }
 
 /* ===============================
-   夢の宿体験内容 写真2枚並び
+   夢の宿：体験内容 写真2枚並び
 ================================= */
 /* 体験内容 写真2枚並び */
 .experience-images {
@@ -597,9 +597,8 @@ header p {
   }
 }
 
-
 /* ===============================
-   Booking.com 予約ボタン
+   夢の宿：Booking.com 予約ボタン
 ================================= */
 /* Booking.com 予約ボタン */
 .booking-btn {
@@ -615,6 +614,41 @@ header p {
 
 .booking-btn:hover {
   background-color: #001f4d;
+}
+
+/* ===============================
+   夢の宿ページ：中央寄せ
+================================= */
+body.minpaku section {
+  text-align: center;
+}
+
+/* ===============================
+   夢の宿ページ：説明文と箇条書きの開始位置を揃える
+================================= */
+body.minpaku section h2,
+body.minpaku section > p,
+body.minpaku section ul {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+/* ===============================
+   夢の宿ページ：施設概要だけ説明文を揃える
+================================= */
+.minpaku-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* ===============================
+   夢の宿ページ：左の┃（縦線）を消す
+================================= */
+body.minpaku h2 {
+  border-left: none;
+  padding-left: 0;
 }
 
 /* ===============================
@@ -753,10 +787,9 @@ header p {
 /* ===============================
    華珈琲ページ：説明文のみ中央寄せ
 ================================= */
-.cafe-guide p,
-#menu p,
-#experience > p,
-#contact > p {
+body.hanacoffee .cafe-guide p,
+body.hanacoffee #menu p,
+body.hanacoffee #contact > p {
   text-align: center;
 }
 
@@ -773,32 +806,18 @@ body.hanacoffee h2 {
 }
 
 /* ===============================
-   華珈琲ページ：体験内容リストは左寄せ
-================================= */
-.hanacoffee #experience ul {
-  text-align: left;      /* 箇条書きは左寄せ */
-  max-width: 800px;     /* 幅を制限して読みやすく */
-  margin: 20px auto;    /* 全体は中央に配置 */
-  padding-left: 20px;   /* ・の位置調整 */
-}
-
-.hanacoffee #experience li {
-  text-align: left;
-}
-
-/* ===============================
    華珈琲ページ：説明文と箇条書きの開始位置を揃える
 ================================= */
-.hanacoffee #experience > p {
-  max-width: 800px;   /* ul と同じ幅 */
+body.hanacoffee #experience > p {
+  max-width: 800px;
   margin: 0 auto 20px;
-  text-align: left;   /* ← 開始位置を揃える */
+  text-align: left;   /* ← ここがポイント */
 }
 
-.hanacoffee #experience ul {
-  max-width: 800px;   /* p と同じ幅 */
+body.hanacoffee #experience ul {
+  max-width: 800px;
   margin: 0 auto;
-  padding-left: 20px;
+  padding-left: 20px; /* ・の位置を微調整 */
   text-align: left;
 }
 
