@@ -822,25 +822,24 @@ body.hanacoffee #experience ul {
 }
 
 /* ===============================
-   スマホ表示：ナビゲーション修正
+   全ページ共通：スマホ用ナビ修正
 ================================= */
 @media screen and (max-width: 768px) {
 
-  body.minpaku nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  nav {
+    display: block;        /* ← flex や float を無効化 */
+    text-align: center;
   }
 
-  body.minpaku nav .menu-icon {
+  nav .menu-icon {
     margin-bottom: 10px;
   }
 
-  body.minpaku nav a {
+  nav a {
     display: block;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
+    margin: 8px 0;
+    white-space: nowrap;   /* 文字の折り返し防止 */
   }
 }
+
 
